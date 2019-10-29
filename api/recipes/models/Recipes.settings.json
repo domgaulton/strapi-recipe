@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "recipes",
+  "info": {
+    "name": "recipes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string",
+      "unique": true
+    },
+    "instructions": {
+      "type": "richtext"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "recipes"
+    }
+  }
+}

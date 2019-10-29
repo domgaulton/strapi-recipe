@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recipes",
+      "handler": "Recipes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recipes/count",
+      "handler": "Recipes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recipes/:id",
+      "handler": "Recipes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recipes",
+      "handler": "Recipes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recipes/:id",
+      "handler": "Recipes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recipes/:id",
+      "handler": "Recipes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
