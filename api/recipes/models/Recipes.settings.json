@@ -20,15 +20,13 @@
       "unique": true
     },
     "ingredients": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "categories": {
       "collection": "category",
       "via": "recipes"
     },
     "method": {
-      "required": true,
       "type": "richtext"
     }
   }
