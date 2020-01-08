@@ -112,3 +112,4 @@ exports
 build
 strapi-recipe
 .env
+.package-lock.json
