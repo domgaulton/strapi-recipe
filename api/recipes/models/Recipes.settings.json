@@ -19,12 +19,17 @@
       "type": "string",
       "unique": true
     },
-    "instructions": {
-      "type": "richtext"
+    "ingredients": {
+      "type": "richtext",
+      "required": true
     },
     "categories": {
       "collection": "category",
       "via": "recipes"
+    },
+    "method": {
+      "required": true,
+      "type": "richtext"
     }
   }
 }
